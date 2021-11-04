@@ -1,3 +1,5 @@
+*{padding:0%;margin: 0%;}
+
 .carousel-item {   
     width: 100%;
     object-fit: contain;
@@ -11,15 +13,21 @@
 }
 .carousel {
     /* height: 1500px; */
-    width: 100%;
-    
-    
+    width: 100%;  
 }
-body{
+
+.citywidth {
+    width: 20%;
+    padding-right: 0;
+}
+#Destinations {
+    width: 100%;
+}
+/* body{
     padding: 0;
     margin: 0;
     width: 100%;
-}
+} */
 
 header{
     margin: 0;
@@ -36,6 +44,11 @@ nav {
 .card {
     height: 500px;
 }
+
+.card:hover{    
+    transform: translateY(-10px);     
+}
+
 .card-img-top{
     height: 300px;
 }
@@ -44,12 +57,27 @@ nav {
     padding-left: 30px !important;
 }
 
-h3 {
+
+h3,h4 {
     padding: 20px;
 }
-
+td {
+    font-size: small;
+}
 
 .ul.dropdropdown-menu.show{
     background-image: url("../Images/dropdown.jpg");
     opacity: 0.8;
+}
+
+hr {
+    color: yellow;
+    /* width: 90%; */
+    padding-left: 20%;
+}
+
+.fab {
+    font-size: 30px;
+    padding: 5px;
+    color: whitesmoke;
 }
