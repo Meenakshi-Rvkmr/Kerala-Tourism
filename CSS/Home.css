@@ -6,13 +6,13 @@
 
 
 .container-fluid {
-    
+    padding: 0;
     width: 100%;
 }
 .carousel {
     /* height: 1500px; */
     width: 100%;
-    padding: 0;
+    
     
 }
 body{
@@ -47,9 +47,7 @@ nav {
 h3 {
     padding: 20px;
 }
-#carouselThingsToDo {
-   margin: 20px;
-}
+
 
 .ul.dropdropdown-menu.show{
     background-image: url("../Images/dropdown.jpg");
