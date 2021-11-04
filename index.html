@@ -13,117 +13,158 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        
+
     <link rel="stylesheet" href="CSS/Home.css">
 
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <header>
-                <!-- <nav class="navbar navbar-dark bg-dark">
-                   
+
+        <header class="fixed-top shadow" id="HeaderNav">
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <div class="container-fluid">
                     <img src="Images/kerala-tourism-title.png" alt="Kerala Tourism logo">
-                    <div>
-                        <a href="Home.html"> Home </a>
-                        <a href="Login.html"> Login </a>
-                        <a href="Register.html"> Sign Up </a>
-                    </div>
-
-
-                </nav> -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <img src="Images/kerala-tourism-title.png" alt="Kerala Tourism logo">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1"
-                                        aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse fw-bolder white" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Destinations">Plan Your Trip</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Destinations</a>
+                                <!-- <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link</a></li>
+                                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                                        <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.keralatourism.org/covid-19">Health Advisory
+                                    for Covid 19</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                            <div class="nav item">
-                                <a class="btn btn-outline-success" href="Login.html" data-target="#theModal" data-toggle="modal"> Login </a>
-                               
-                            </div>
-                            <div class="nav item">
-                                <a class="btn btn-outline-success" href="Register.html"> Sign Up </a>
-                            </div>
+                            </form> -->
+                        <div class="nav-item">
+                            <a class="btn btn-success" href="Login.html"> Login
+                            </a>
+
+                        </div>
+                        <div class="nav-item">
+                            <a class="btn btn-success" href="Register.html"> Sign Up </a>
                         </div>
                     </div>
-        </div>
-        </nav>
-        <div id="theModal" class="modal fade text-center">
-            <div class="modal-dialog">
-              <div class="modal-content">
-              </div>
-            </div>
-          </div>
-        </header>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="modal fade text-center" id="theModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                  </div>
                 </div>
-              </div>
+            </nav>
+        </header>
+
+
+        <div>
+            <!-- Modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel" style="height: 30px;">Cities of Kerala</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="height: 10rem;">
+                                        <div class="card-body my-auto"
+                                            style="background-image: url('Images/Alappuzha.jpg'); background-size: cover;"
+                                            href="Districts/Alappuzha.html">
+                                            <div class="my-auto">
+                                                <h3 class="card-title text-center">Alappuzha</h3>
+                                                <div style="height: 100%; padding-top: 20px;"
+                                                    class="text-end align-text-bottom">
+                                                    <a href="Districts/Alappuzha.html"
+                                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="height: 10rem;">
+                                        <div class="card-body my-auto"
+                                            style="background-image: url('Images/vasco_da_gama_square_ernakulam.jpg'); background-size: cover;"
+                                            href="Districts/Alappuzha.html">
+                                            <div class="my-auto">
+                                                <h3 class="card-title text-center">Ernakulam</h3>
+                                                <div style="height: 100%; padding-top: 20px;"
+                                                    class="text-end align-text-bottom">
+                                                    <a href="Districts/Ernakulam.html"
+                                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="height: 10rem;">
+                                        <div class="card-body my-auto"
+                                            style="background-image: url('Images/idukki.jpg'); background-size: cover;"
+                                            href="Districts/Alappuzha.html">
+                                            <div class="my-auto">
+                                                <h3 class="card-title text-center">Idukki</h3>
+                                                <div style="height: 100%; padding-top: 20px;"
+                                                    class="text-end align-text-bottom">
+                                                    <a href="Districts/Idukki.html"
+                                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container-fluid">
+
         <div class="row">
             <div id="carouselExampleControls" class="animate__animated animate__backInDown carousel slide"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="Images/Carousal1.jfif" class="d-block w-100 container-fluid" alt="..." height="500px">
+                        <img src="Images/Carousal8.jpg" class="d-block w-100 container-fluid" alt="..." height="500px">
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Welcome to Kerala!</h1>
                             <!-- <p>...</p> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/Carousal2.jfif" class="d-block w-100 container-fluid" alt="..." height="500px">
+                        <img src="Images/Carousal4.jpg" class="d-block w-100 container-fluid" alt="..." height="500px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>"Travel is the language of peace"</h5>
+                            <h1>"Travel is the language of peace"</h1>
                             <p>- Mahathma Gandhi</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/Carousal3.jfif" class="d-block w-100 container-fluid" alt="..." height="500px">
+                        <img src="Images/Carousal1.jpg" class="d-block w-100 container-fluid" alt="..." height="500px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>FUN, FREEDOM &amp; FABULOUS DESTINATIONS</h5>
+                            <h1>FUN, FREEDOM &amp; FABULOUS DESTINATIONS</h1>
                         </div>
                     </div>
                 </div>
@@ -139,12 +180,242 @@
                 </button>
             </div>
         </div>
+
+        <br>
+        <!-- Description div -->
+        <div class="row">
+            <div class="col">
+                <h3><em>
+                        Experience the beauty of Malabar Coast beaches, backwaters, wildlife reserves &
+                        the Western Ghats mountains.
+                    </em></h3>
+            </div>
+            <div class="col">
+                <p> Flanked by the Arabian Sea in the West, the towering Western Ghats in the East and networked by 44
+                    interconnected rivers, Kerala is blessed with a unique set of geographical features that have made
+                    it one of the most sought after tourist destinations in Asia. A long shoreline with serene beaches,
+                    tranquil stretches of emerald backwaters, lush hill stations and exotic wildlife, are just a few of
+                    the wonders that await you once you crossover to the other side.</p>
+                <p>Kerala prides itself for being the flag bearer for not just how a culture can respect its past but
+                    also march forward with growth & progress as well. Hundred percent literacy, world-class health care
+                    systems, India's lowest infant mortality and highest life expectancy rates are among a few of the
+                    milestones that the people of the state are extremely proud of.</p>
+            </div>
+        </div>
+        <!-- Things to do -->
+        <div class="row">
+            <br><br><br>
+            <h2 class="text-center"> Things to Do in Kerala</h2>
+            <br>
+            <div id="carouselThingsToDo" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                <div class="carousel-inner" data-bs-ride="false">
+                    <div class="carousel-item active text-center">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow rounded">
+                                    <img class="card-img-top" src="Images/munnar-trekking-camping.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Forest Trekking</h5>
+                                        <p class="card-text"> Explore the ecotourism possibilities of Kerala developed
+                                            by Kerala Forest Department with the active support and involvement of the
+                                            local community. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow">
+                                    <img class="card-img-top" src="Images/ayurveda.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ayurveda Rejuvenation</h5>
+                                        <p class="card-text"> Energies your cells and rejuvenate your body and mind
+                                            through Ayurvedic and Panchakarma treatments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow">
+                                    <img class="card-img-top" src="Images/Alappuzha.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Houseboat Cruise</h5>
+                                        <p class="card-text"> A blissful experience of sailing looking at the lush green
+                                            landscape and being served a freshly prepared meal as you travel through the
+                                            tranquil backwaters.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow">
+                                    <img class="card-img-top" src="Images/Enjoy-Village-life-for-a-day.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Village Life Experience</h5>
+                                        <p class="card-text"> Have an authentic rural experience at Kumbalangi
+                                            Integrated Tourism Village. Exploring the local paddy cultivation, canoeing
+                                            in mangrove forests, fishing, crab farming are amongst the many activities
+                                            in Kerala. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow">
+                                    <img class="card-img-top" src="Images/things-to-do-sadya.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sadhya</h5>
+                                        <p class="card-text"> Sadya is an elaborate mouth-watering feast of Kerala,
+                                            usually served on a banana leaf with the number of side dishes ranging from
+                                            16 to 60.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow">
+                                    <img class="card-img-top"
+                                        src="Images/Go-Bamboo-Rafting-in-Periyar-Lake-in-Kerala.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bamboo Rafting</h5>
+                                        <p class="card-text"> The most famous forest reserve of Kerala has much more to
+                                            offer than wildlife sighting and a ferry ride on the lake.The ride shall
+                                            take you through the sanctuary’s wilderness and give you a chance to have an
+                                            up-close and personal encounter with Kerala’s flora and fauna, coupled with
+                                            a little bit of hiking in the dense forest.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselThingsToDo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselThingsToDo"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="fas fa-chevron-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <!-- Explore Kerala -->
+        <div class="row container-fluid">
+            <br><br><br>
+            <h2 class="text-center"> Explore Kerala</h2>
+            <br>
+            <div class="col-8">
+                <video autoplay muted height="400px" width="100%">
+                    <source
+                        src="Videos/Kerala tourism intro _ why visit kerala _ Tourist Destinations _ Tourist attraction (online-video-cutter.com).mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="col">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="411" height="400" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=kerala%20tourist%20spots&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://123movies-to.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 400px;
+                                width: 411px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">embed code google maps</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 400px;
+                                width: 411px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <!-- Top Destinations -->
+        <div class="row" id="Destinations">
+            <br><br><br>
+            <h2 class="text-center"> Cities of Kerala</h2>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="height: 10rem;">
+                        <div class="card-body my-auto"
+                            style="background-image: url('Images/Alappuzha.jpg'); background-size: cover;"
+                            href="Districts/Alappuzha.html">
+                            <div class="my-auto">
+                                <h3 class="card-title text-center">Alappuzha</h3>
+                                <div style="height: 100%; padding-top: 20px;" class="text-end align-text-bottom">
+                                    <a href="Districts/Alappuzha.html"
+                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 10rem;">
+                        <div class="card-body my-auto"
+                            style="background-image: url('Images/vasco_da_gama_square_ernakulam.jpg'); background-size: cover;"
+                            href="Districts/Alappuzha.html">
+                            <div class="my-auto">
+                                <h3 class="card-title text-center">Ernakulam</h3>
+                                <div style="height: 100%; padding-top: 20px;" class="text-end align-text-bottom">
+                                    <a href="Districts/Ernakulam.html"
+                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 10rem;">
+                        <div class="card-body my-auto"
+                            style="background-image: url('Images/idukki.jpg'); background-size: cover;"
+                            href="Districts/Alappuzha.html">
+                            <div class="my-auto">
+                                <h3 class="card-title text-center">Idukki</h3>
+                                <div style="height: 100%; padding-top: 20px;" class="text-end align-text-bottom">
+                                    <a href="Districts/Idukki.html"
+                                        class="btn btn-outline-success stretched-link align-bottom">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  
 
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
 
-    </div>
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("HeaderNav").style.background = "#1a1616e0"
 
+            } else {
+                document.getElementById("HeaderNav").style.background = "transparent";
+            }
+        }
+    </script>
 </body>
 
 </html>

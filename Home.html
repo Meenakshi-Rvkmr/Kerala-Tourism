@@ -1,18 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+    integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div>
-        Hi there
-      <iframe src="https://www.youtube.com/embed/yZV3XraFs2I?autoplay=1&controls=0&showinfo=0&autohide=1"" title="YouTube video player" ></iframe>
+  <div>
+    Hi there
+    <!-- weather widget start -->
+    <div id="m-booked-vertical-one-prime-48226">
+      <div class="weather-customize weather-booked-vertical-one-prime" style="width:287px;">
+        <div class="booked-vertical-prime-in">
+          <div class="booked-vertical-prime">
+            <div class="bwop-city">Alappuzha</div>
+            <div class="bwop-icon wm18 "></div>
+            <div class="booked-bwop-today">
+              <div class="booked-bwop-today-temperature">
+                <div class="booked-wzs-bwop-val">
+                  <div class="booked-bwop-number"><span class="plus">+</span>28</div>
+                  <div class="booked-bwop-dergee">
+                    <div class="booked-wzs-bwop-dergee-val">&deg;</div>
+                    <div class="booked-wzs-bwop-dergee-name">C</div>
+                  </div>
+                </div>
+              </div>
+              <div class="booked-bwop-today-extreme">
+                <div class="booked-bwop booked-pd-h"><span>High:</span><span class="plus">+</span>28</div>
+                <div class="booked-bwop booked-pd-l"><span>Low:</span><span class="plus">+</span>24</div>
+              </div>
+            </div>
+            <div class="bwop-state"> Rain </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <video autoplay muted loop id="myVideo">
-        <source src="https://youtu.be/yZV3XraFs2I" type="video/mp4">
-      </video>
+    <script
+      type="text/javascript"> var css_file = document.createElement("link"); var widgetUrl = location.href; css_file.setAttribute("rel", "stylesheet"); css_file.setAttribute("type", "text/css"); css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-prime-vertical-one.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData_48226(data) { if (typeof (data) != 'undefined' && data.results.length > 0) { for (var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-vertical-one-prime-48226'); if (objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if (copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=26220;type=7;scode=124;ltid=3457;domid=w209;anc_id=36979;countday=undefined;cmetric=1;wlangID=1;color=137AE9;wwidth=287;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1"; widgetSrc += ';ref=' + widgetUrl; widgetSrc += ';rand_id=48226'; var weatherBookedScript = document.createElement("script"); weatherBookedScript.setAttribute("type", "text/javascript"); weatherBookedScript.src = widgetSrc; document.body.appendChild(weatherBookedScript)</script>
+    <!-- weather widget end -->
+  </div>
+  <div class="row">
+    <div id="tmi-main-map" style="position: relative; overflow: hidden;">
+      <div
+        style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+        <div class="gm-style"
+          style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+          <div><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button"
+              style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"></button>
+          </div>
+          <div tabindex="0" aria-label="Map" aria-roledescription="map" role="group"
+            style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+            <div
+              style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+              <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                  <div style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -46, -96);">
+                    <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                    <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;">
+                      <div style="width: 256px; height: 256px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+              <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+              <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -29px; top: -6px; z-index: 19;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 0px; top: 91px; z-index: 116;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -26px; top: 25px; z-index: 50;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 47px; top: 29px; z-index: 54;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 44px; top: 143px; z-index: 168;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 12px; top: 104px; z-index: 129;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 43px; top: -20px; z-index: 5;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -34px; top: -61px; z-index: -36;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 37px; top: 137px; z-index: 162;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -22px; top: 36px; z-index: 61;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -41px; top: -168px; z-index: -143;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -73px; top: -128px; z-index: -103;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 9px; top: -24px; z-index: 1;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -1px; top: -38px; z-index: -13;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -27px; top: -10px; z-index: 15;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -49px; top: -68px; z-index: -43;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: -14px; top: 26px; z-index: 51;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 17px; top: -48px; z-index: -23;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div
+                  style="width: 25px; height: 25px; overflow: hidden; position: absolute; left: 32px; top: 128px; z-index: 153;">
+                  <img alt="" src="../../markers/city.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; user-select: none; width: 25px; height: 25px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                  <div style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -46, -96);">
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;">
+                    </div>
+                    <div
+                      style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                <div style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -46, -96);">
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i91!3i60!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=82280"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i90!3i60!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=116723"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i90!3i59!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=73696"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i91!3i59!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=39253"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i92!3i59!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=4810"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i92!3i60!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=47837"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i92!3i61!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=17609"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i91!3i61!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=52052"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i90!3i61!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=86495"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i89!3i61!4i256!2m3!1e0!2sm!3i580305084!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=96881"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i89!3i60!4i256!2m3!1e0!2sm!3i580305084!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=127109"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div
+                    style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                    <img draggable="false" alt="" role="presentation"
+                      src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i89!3i59!4i256!2m3!1e0!2sm!3i580305228!2m3!1e2!6m1!3e5!3m17!2sen-IN!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBrB2DlAQsIq171oUNYCGIH5k0qk_nrEFE&amp;token=71564"
+                      style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+              <div
+                style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -37px; top: -14px; z-index: 19;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="0"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -8px; top: 83px; z-index: 116;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -34px; top: 17px; z-index: 50;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 39px; top: 21px; z-index: 54;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 36px; top: 135px; z-index: 168;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 4px; top: 96px; z-index: 129;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 35px; top: -28px; z-index: 5;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -42px; top: -69px; z-index: -36;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 29px; top: 129px; z-index: 162;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -30px; top: 28px; z-index: 61;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -49px; top: -176px; z-index: -143;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -81px; top: -136px; z-index: -103;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 1px; top: -32px; z-index: 1;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -9px; top: -46px; z-index: -13;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -35px; top: -18px; z-index: 15;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -57px; top: -76px; z-index: -43;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -22px; top: 18px; z-index: 51;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 9px; top: -56px; z-index: -23;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                  <div title="" role="button" tabindex="-1"
+                    style="width: 41px; height: 41px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: 24px; top: 120px; z-index: 153;">
+                    <img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false"
+                      style="width: 41px; height: 41px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                  </div>
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                  <div style="cursor: default; position: absolute; top: 0px; left: 0px; z-index: -198;">
+                    <div class="gm-style-iw-a" style="position: absolute; left: 13px; top: 116px;">
+                      <div class="gm-style-iw-t" style="right: 0px; bottom: 36px;">
+                        <div role="dialog" tabindex="-1" class="gm-style-iw gm-style-iw-c"
+                          style="padding-right: 0px; padding-bottom: 0px; max-width: 430px; max-height: 344px; min-width: 0px;">
+                          <div class="gm-style-iw-d" style="overflow: scroll; max-height: 326px;">
+                            <div>
+                              <div class="main-map"><img src="../../images/kollam-1.jpg"></div>
+                              <div class="inner-map-l">
+                                <h4>Kollam</h4>
+                                <p>Kollam, Kerala, India</p>
+                                <p><a href="https://www.tourmyindia.com/states/kerala/kollam.html" tabindex="0">Click
+                                    Here</a></p>
+                              </div>
+                            </div>
+                          </div><button draggable="false" aria-label="Close" title="Close" type="button"
+                            class="gm-ui-hover-effect"
+                            style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; top: -6px; right: -6px; width: 30px; height: 30px;"><img
+                              src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22/%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%3C/svg%3E"
+                              alt=""
+                              style="pointer-events: none; display: block; width: 14px; height: 14px; margin: 8px;"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gm-style-moc"
+              style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+              <p class="gm-style-mot"></p>
+            </div>
+          </div><iframe aria-hidden="true" frameborder="0" tabindex="-1"
+            style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+          <div
+            style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);">
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div><button draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view"
+              type="button" class="gm-control-active gm-fullscreen-control"
+              style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                alt="" style="height: 18px; width: 18px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                alt="" style="height: 18px; width: 18px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                alt="" style="height: 18px; width: 18px;"></button></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div>
+            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="0"
+              controlheight="0"
+              style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;">
+              <div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;">
+                <div
+                  style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;">
+                  <button draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise" type="button"
+                    class="gm-control-active"
+                    style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"></button>
+                  <div
+                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+                  </div><button draggable="false" aria-label="Rotate map counterclockwise"
+                    title="Rotate map counterclockwise" type="button" class="gm-control-active"
+                    style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                      style="width: 20px; height: 20px;"></button>
+                  <div
+                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+                  </div><button draggable="false" aria-label="Tilt map" title="Tilt map" type="button"
+                    class="gm-tilt gm-control-active"
+                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                      style="width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                      style="width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                      style="width: 18px;"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40"
+              controlheight="81"
+              style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;">
+              <div class="gmnoprint" controlwidth="40" controlheight="81"
+                style="position: absolute; left: 0px; top: 0px;">
+                <div draggable="false"
+                  style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
+                  <button draggable="false" aria-label="Zoom in" title="Zoom in" type="button" class="gm-control-active"
+                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"></button>
+                  <div
+                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
+                  </div><button draggable="false" aria-label="Zoom out" title="Zoom out" type="button"
+                    class="gm-control-active"
+                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                      alt="" style="height: 18px; width: 18px;"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+              <a target="_blank" rel="noopener"
+                href="https://maps.google.com/maps?ll=10.137532,76.441811&amp;z=7&amp;hl=en-IN&amp;gl=US&amp;mapclient=apiv3"
+                title="Open this area in Google Maps (opens a new window)"
+                style="position: static; overflow: visible; float: none; display: inline;">
+                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt=""
+                    src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                </div>
+              </a></div>
+          </div>
+          <div></div>
+          <div>
+            <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 158px; bottom: 0px;">
+              <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;"></div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                </div>
+                <div
+                  style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button"
+                    style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Keyboard
+                    shortcuts</button></div>
+              </div>
+            </div>
+            <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 87px;">
+              <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;"></div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                </div>
+                <div
+                  style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <button draggable="false" aria-label="Map Data" title="Map Data" type="button"
+                    style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Map
+                    Data</button><span>Map data ©2021</span></div>
+              </div>
+            </div>
+            <div class="gmnoprint gm-style-cc" draggable="false"
+              style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+              <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                <div style="width: 1px;"></div>
+                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+              </div>
+              <div
+                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                <a href="https://www.google.com/intl/en-IN_US/help/terms_maps.html" target="_blank" rel="noopener"
+                  style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div>
+            </div>
+            <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+              <div
+                style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                Map data ©2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

@@ -1,20 +1,57 @@
-.carousel-item {
-   
+.carousel-item {   
     width: 100%;
     object-fit: contain;
+    color: black;
 }
 
 
 .container-fluid {
-    padding: 0;
+    
     width: 100%;
 }
 .carousel {
     /* height: 1500px; */
     width: 100%;
     padding: 0;
+    
 }
-/* body{
-    padding: none;
+body{
+    padding: 0;
     margin: 0;
-} */
+    width: 100%;
+}
+
+header{
+    margin: 0;
+}
+.btn{
+    margin-left: 10px;
+    border-radius: 25px;
+}
+nav {
+    background-color: transparent;
+    transition: 0.2s;
+    
+}
+.card {
+    height: 500px;
+}
+.card-img-top{
+    height: 300px;
+}
+.nav-link {
+    color: white !important;
+    padding-left: 30px !important;
+}
+
+h3 {
+    padding: 20px;
+}
+#carouselThingsToDo {
+   margin: 20px;
+}
+
+.ul.dropdropdown-menu.show{
+    background-image: url("../Images/dropdown.jpg");
+    opacity: 0.8;
+}
