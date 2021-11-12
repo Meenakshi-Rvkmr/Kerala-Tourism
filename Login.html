@@ -12,6 +12,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/Register.css">
+    <script src="js/Login.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -24,7 +25,7 @@
                     <div class="card-body white">
                         <h1>Sign In </h1>
                         <br>
-                        <form>
+                        <form class="needs-validation" novalidate onsubmit="return validate()" action="index.html">
                          
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-form-label">Email</label>
@@ -32,7 +33,10 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>
                                     </div>
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required onchange="validateEmail()"> 
+                                    <div class="invalid-feedback emailmessage">
+                                       Email is required
+                                      </div>
                                 </div>
 
                             </div>
@@ -44,7 +48,10 @@
                                         <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span>
                                     </div>
                                     <input type="password" class="form-control" id="inputPassword3"
-                                        placeholder="Password">
+                                        placeholder="Password" required>
+                                        <div class="invalid-feedback">
+                                            Password is required
+                                          </div>
                                 </div>
 
                             </div>

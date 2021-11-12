@@ -16,6 +16,12 @@ body,html {
     color: white;
 }
 
+.form-control.is-valid, .form-control:valid{
+    border-width: medium;
+}
+.form-control.is-invalid,.form-control:invalid{
+    border-width: medium;
+}
 .input-group-text{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
