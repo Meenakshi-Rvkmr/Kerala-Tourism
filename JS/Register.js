@@ -36,12 +36,12 @@ function validateEmail() {
         console.log(email.value + "-" + value)
         if (!value) {
             document.getElementsByClassName("emailmessage")[0].innerText = "Enter valid email"
-            document.getElementById("inputPasswordRetype").setCustomValidity("Error")
+            document.getElementById("inputEmail3").setCustomValidity("Error")
             email.classList.add("is-invalid")
             //email.classList.remove("is-valid")
         }
         else {
-            document.getElementById("inputPasswordRetype").setCustomValidity("")
+            document.getElementById("inputEmail3").setCustomValidity("")
             email.classList.remove("is-invalid")
             email.classList.add("is-valid")
         }
