@@ -15,10 +15,12 @@ function validateEmail() {
         let value = re.test(String(email.value).toLowerCase());   
         console.log(email.value + "-" + value)     
         if (!value) {
+            document.getElementById("inputEmail3").setCustomValidity("Error")
             document.getElementsByClassName("emailmessage")[0].innerText = "Enter valid email"
             email.classList.add("is-invalid")
         }
         else{
+            document.getElementById("inputEmail3").setCustomValidity("")
             email.classList.remove("is-invalid")
             email.classList.add("is-valid")            
         }
